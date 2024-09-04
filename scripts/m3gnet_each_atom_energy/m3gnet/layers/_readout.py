@@ -253,8 +253,6 @@ class WeightedReadout(ReadOut):
         indices = get_segment_indices_from_n(n_field)
         n_structs = tf.shape(n_field)[0]
         factor = unsorted_segment_fraction(weights[:, 0], indices, num_segments=n_structs)
-        print('★★★★★★★★★★★★★★★★★★★★★')
-        # print(tf.math.segment_sum(factor[:, None] * updated_field, indices))
         return tf.math.segment_sum(factor[:, None] * updated_field, indices)
 
     def get_config(self):

@@ -41,12 +41,18 @@ RUN pip install --upgrade pip \
     poetry \
     lmdb \
     opencv-python \
-    openpyxl
+    openpyxl \
+    nb_black
 
 # python libraries
 RUN pip install --upgrade pip \
 &&  pip install --no-cache-dir \
     nglview \
     graphviz \
-    pymatgen==2022.11.7 \
+    pymatgen==2023.7.11 \
     rmsd
+
+# m3gnet 
+COPY ./scripts/m3gnet_each_atom_energy /workspace/scripts/m3gnet_each_atom_energy
+WORKDIR /workspace/scripts/m3gnet_each_atom_energy
+RUN pip install --no-cache-dir -e ./

@@ -261,8 +261,6 @@ class M3GNet(GraphModelMixin, tf.keras.models.Model):
             g = self.three_interactions[i](g, three_basis, three_cutoff)
             g = self.graph_layers[i](g)
         g, diff_energy_array = self.final(g)
-        print(graph[Index.N_ATOMS][0])
-        print(f'std:{self.std} type:{type(self.std)}')
         g = g * self.std + self.mean
         g += property_offset
 
