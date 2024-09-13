@@ -37,7 +37,7 @@ We offer a sample code to generate atomic energy.
 We offer a sample code to create nanoparticle.
 
 ## Datasets
-1000 HEA nano particles structure data are hosted on [figshare]().
+1000 HEA nano particles structure data are hosted on [figshare](https://figshare.com/articles/dataset/Nano_particle_structures/26973409).
 
 ## Reference
 
