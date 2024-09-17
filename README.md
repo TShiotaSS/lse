@@ -5,8 +5,7 @@
 
 ## About LSE
 Using neural network potential (NNP), we defined local surface energy (LSE). LSE is a metric that reflects local reactivity at an atomic resolution.<br>
-In this study, we use universal NNP M3GNet. <br>
-Using this metric LSE, you can predict CO adsorption energy on high entropy alloy surfaces.
+In this study, we use universal NNP M3GNet. <br> Using this metric LSE, you can predict CO adsorption energy on high entropy alloy surfaces.
 
 ## Environment setting
 
